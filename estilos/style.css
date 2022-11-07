@@ -28,11 +28,16 @@ section#telefone {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -45%);
     height: 506px;
     width: 252px;
     
     background: url(../imagens/frame-iphone1.png) no-repeat;
+}
+
+#portfolio {
+
+    text-align: right;
 }
 
 iframe#tela {
@@ -41,9 +46,22 @@ iframe#tela {
     left: 17px;
     height: 379px;
     width: 216px;
+    
 }
+
 
 section#portfolio img {
     width: 50px;
     height: 50px;
+    margin-top: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.459);
+    box-sizing: border-box;
+}   
+
+#portfolio img:hover {
+    border: 1px solid rgba(255, 255, 255, 0.479);
+    background-color: rgba(0, 0, 0, 0.356);
+    transform: translate(-5px, -5px);
+    transition: 0.2s, border 1s;
 }
