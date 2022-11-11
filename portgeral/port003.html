@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        a {
+            color: rgb(2, 2, 2);
+            text-align: center;
+            font-size: 2em;
+            font-weight: bolder;
+            margin-left: 20px;
+        }
+
+        body {
+            min-width:50%;
+            font-size: 3vw;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(91, 175, 147);
+            background-image: url(img.tab003.jpg);
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+
+        table {
+            position: relative;
+            border-collapse: collapse;
+            margin-top: 30px;         
+        }
+
+        div {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -30%);
+
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+            color: #000000;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: rgb(216, 212, 212);
+            color: #000000;
+        }
+
+
+        th {
+            border: 1px solid black;
+            background-color: rgb(100, 100, 100);
+            color: white;
+            padding: 10px;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(100, 100, 100);
+
+        }
+
+        td { 
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        .pop {
+            width: 50px;
+        }
+
+        .uf {
+            width: 360px;
+        }
+
+        .pos {
+            width: 10px;
+        }
+
+        caption {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.5em;
+            background-color: #183643;
+            color: white;
+            border: 1px solid black;
+
+        }
+
+        .rodape {
+            background-color: rgb(100, 100, 100);
+            color: white;
+        }
+
+        tfoot {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-weight: bolder;
+        }
+    </style>
+
+</head>
+<body>
+        <a href="https://robisonnunes08.github.io/estudos/ex023/tabela003.html">clique para acessar o site</a>
+        <table>
+            <caption>População das Unidades Federativas</caption>
+            <thead>
+                <tr>
+                    <th class="pos">Pos.</th>
+                    <th>Unidade Federativa</th>
+                    <th class="pop">População</th>
+                    <th>% da pop. total</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>São Paulo</td>
+                    <td class="num">46 649 132</td>
+                    <td>21,9%</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Minas Gerais</td>
+                    <td class="num">21 411 923</td>
+                    <td>10,1%</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 463 349</td>
+                    <td>8,2%</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Bahia</td>
+                    <td class="num">14 985 284</td>
+                    <td>7,1%</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Paraná</td>
+                    <td class="num">11 597 484</td>
+                    <td>5,4%</td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">11 466 630</td>
+                    <td>5,4%</td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td> Pernambuco</td>
+                    <td class="num">9 674 793</td>
+                    <td>4,5%</td>
+                </tr>
+
+                <tr>
+                    <td>8</td>
+                    <td>Ceará</td>
+                    <td class="num">9 240 580</td>
+                    <td>4,3%</td>
+                </tr>
+
+                <tr>
+                    <td>9</td>
+                    <td> Pará</td>
+                    <td class="num">8 777 124</td>
+                    <td>4,1%</td>
+                </tr>
+
+                <tr>
+                    <td>10</td>
+                    <td>Santa Catarina</td>
+                    <td class="num">7 338 473</td>
+                    <td>3,4%</td>
+                </tr>
+
+                <tr>
+                    <td>11</td>
+                    <td>Goiás</td>
+                    <td class="num">7 206 589</td>
+                    <td>3,4%</td>
+                </tr>
+
+                <tr>
+                    <td>12</td>
+                    <td>Maranhão</td>
+                    <td class="num">7 153 262</td>
+                    <td>3,4%</td>
+                </tr>
+
+                <tr>
+                    <td>13</td>
+                    <td>Amazonas</td>
+                    <td class="num">4 269 995</td>
+                    <td>2,0%</td>
+                </tr>
+
+                <tr>
+                    <td>14</td>
+                    <td>Espírito Santo</td>
+                    <td class="num">4 108 508</td>
+                    <td>1,9%</td>
+                </tr>
+
+                <tr>
+                    <td>15</td>
+                    <td>Paraíba</td>
+                    <td class="num">4 059 905</td>
+                    <td>1,9%</td>
+                </tr>
+
+                <tr>
+                    <td>16</td>
+                    <td>Mato Grosso</td>
+                    <td class="num">3 567 234</td>
+                    <td>1,7%</td>
+                </tr>
+
+                <tr>
+                    <td>17</td>
+                    <td> Rio Grande do Norte</td>
+                    <td class="num">3 560 903</td>
+                    <td>1,7%</td>
+                </tr>
+
+                <tr>
+                    <td>18</td>
+                    <td>Alagoas</td>
+                    <td class="num">3 365 351</td>
+                    <td>1,6%</td>
+                </tr>
+
+                <tr>
+                    <td>19</td>
+                    <td> Piauí</td>
+                    <td class="num">3 289 290</td>
+                    <td>1,6%</td>
+                </tr>
+
+                <tr>
+                    <td>20</td>
+                    <td>Distrito Federal</td>
+                    <td class="num">3 094 325</td>
+                    <td>1,4%</td>
+                </tr>
+
+                <tr>
+                    <td>21</td>
+                    <td>Mato Grosso do Sul</td>
+                    <td class="num">2 839 188</td>
+                    <td>1,3%</td>
+                </tr>
+
+                <tr>
+                    <td>22</td>
+                    <td>Sergipe</td>
+                    <td class="num">2 338 474</td>
+                    <td>1,1%</td>
+                </tr>
+
+                <tr>
+                    <td>23</td>
+                    <td>Rondônia</td>
+                    <td class="num">1 815 278</td>
+                    <td>0,8%</td>
+                </tr>
+
+                <tr>
+                    <td>24</td>
+                    <td>Tocantins</td>
+                    <td class="num">1 607 363</td>
+                    <td>0,7%</td>
+                </tr>
+
+                <tr>
+                    <td>25</td>
+                    <td> Acre</td>
+                    <td class="num">906 876</td>
+                    <td>0,4%</td>
+                </tr>
+
+                <tr>
+                    <td>26</td>
+                    <td>Amapá</td>
+                    <td class="num">877 613</td>
+                    <td>0,4%</td>
+                </tr>
+
+                <tr>
+                    <td>27</td>
+                    <td>Roraima</td>
+                    <td class="num">652 713</td>
+                    <td>0,3%</td>
+                </tr>
+
+            </tbody>
+
+            <tfoot class="rodape">
+                <tr>
+                    <th colspan="2" class="rodape">Total de Habitantes</th>
+                    <td class="rodape"><strong>213.317.639</strong></td>
+                    <td class="rodape"><strong>100 %</strong></td>
+                </tr>
+
+            </tfoot>
+
+        </table>
+
+        <footer><p style="font-size: 15px ;">Site criado por</p> <a href="https://github.com/robisonnunes08" target="_blank">Róbison Nunes</a></footer>
+
+      
+
+
+    
+</body>
+</html>
